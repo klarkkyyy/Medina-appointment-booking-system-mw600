@@ -1,0 +1,180 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f3efe8;
+  color: #2b2b2b;
+}
+
+header {
+  background-color: #1f2a38;
+  color: white;
+  padding: 24px 16px;
+  text-align: center;
+  border-bottom: 5px solid #b3312c;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header p {
+  margin: 6px 0 0;
+  color: #c9d1dc;
+}
+
+main {
+  max-width: 1000px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 24px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+/* ---------- Form ---------- */
+
+form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 14px;
+}
+
+.field label {
+  display: block;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 9px;
+  font-size: 15px;
+  font-family: inherit;
+  border: 1px solid #b9b9b9;
+  border-radius: 5px;
+}
+
+.form-buttons {
+  grid-column: 1 / -1;
+  display: flex;
+  gap: 10px;
+}
+
+/* ---------- Buttons ---------- */
+
+button {
+  padding: 10px 18px;
+  font-size: 15px;
+  font-family: inherit;
+  color: white;
+  background-color: #1f2a38;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+button.secondary {
+  background-color: #6b7280;
+}
+
+button.danger {
+  background-color: #b3312c;
+}
+
+button.small {
+  padding: 5px 10px;
+  font-size: 13px;
+}
+
+/* ---------- Messages ---------- */
+
+#message {
+  margin: 14px 0 0;
+  padding: 10px 12px;
+  border-radius: 5px;
+}
+
+#message.success {
+  background-color: #dff3e3;
+  color: #1c6b2f;
+}
+
+#message.error {
+  background-color: #fbe1df;
+  color: #9b1c16;
+}
+
+/* ---------- Table ---------- */
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #e3e3e3;
+  white-space: nowrap;
+}
+
+th {
+  background-color: #f3efe8;
+  font-size: 14px;
+}
+
+td.empty {
+  text-align: center;
+  color: #777;
+  padding: 24px;
+}
+
+td.actions button {
+  margin-right: 5px;
+}
+
+.badge {
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 13px;
+  text-transform: capitalize;
+}
+
+.badge.booked {
+  background-color: #dce9fb;
+  color: #1c4f9b;
+}
+
+.badge.done {
+  background-color: #dff3e3;
+  color: #1c6b2f;
+}
+
+.badge.cancelled {
+  background-color: #e6e6e6;
+  color: #666;
+}
